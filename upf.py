@@ -11,9 +11,25 @@ def value_type(v):
 seen = set()
 filter_params = "-p" in sys.argv
 
+exclude_patterns = [
+    "v1?ray=",
+    ".ttf?v=",
+    ".css?ver=",
+    ".js?ver=",
+    ".gif?ray=",
+    ".svg?v=",
+    ".woff2?v=",
+    ".woff?v=",
+    ".eot?v=",
+    "wp-json/oembed/1.0/embed?url="
+]
+
 for line in sys.stdin:
     url = line.strip()
     if not url:
+        continue
+
+    if filter_params and any(pattern in url for pattern in exclude_patterns):
         continue
 
     parsed = urlparse(url)
