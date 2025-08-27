@@ -11,7 +11,7 @@
 cat filename.txt | python upf.py | tee upf.txt
 ```
 
-### فقط الروابط التي تحتوي باراميترات
+### فقط الروابط التي تحتوي على باراميترات
 
 ```bash
 cat filename.txt | python upf.py -p | tee upf.txt
