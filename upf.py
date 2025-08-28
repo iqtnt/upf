@@ -15,6 +15,7 @@ exclude_patterns = [
     "v1?ray=",
     ".ttf?v=",
     ".css?ver=",
+    ".js?v=",
     ".js?ver=",
     ".gif?ray=",
     ".svg?v=",
