@@ -30,6 +30,7 @@ exclude_patterns = [
     ".ttf?v=",
     ".css?ver=",
     ".css?v=",
+    ".css?r=",
     ".js?v=",
     ".js?ver=",
     ".js?r=",
